@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity(), ButtonFragment.ButtonInterface {
             supportFragmentManager
                 .beginTransaction()
                 .add(R.id.container2, DieFragment())
+                .replace(R.id.container1, ButtonFragment())
                 .commit()
         }
 
